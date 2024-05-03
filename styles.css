@@ -1,0 +1,163 @@
+/* Estilos generales para todos los dispositivos */
+
+/* Estilos para dispositivos con un ancho máximo de 600px (celulares) */
+@media screen and (max-width: 600px) {
+    /* Aquí van los estilos específicos para celulares */
+}
+
+/* Estilos para dispositivos con un ancho máximo de 900px (tablets) */
+@media screen and (max-width: 900px) {
+    /* Aquí van los estilos específicos para tablets */
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 1200px (computadoras) */
+@media screen and (min-width: 1200px) {
+    /* Aquí van los estilos específicos para computadoras */
+}
+/* Estilos generales para la barra de navegación */
+.navbar {
+    background-color: #2b85cd; /* Color de fondo de la barra de navegación */
+    overflow: hidden;
+}
+
+/* Estilos generales para la barra de navegación */
+.navbar {
+    background-color: #2b85cd; /* Color de fondo de la barra de navegación */
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: top 0.3s; /* Transición suave para ocultar/mostrar la barra de navegación */
+    z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
+}
+
+/* Estilos para los enlaces de la barra de navegación */
+.navbar a {
+    float: left;
+    display: block;
+    color: #fff; /* Color de texto de los enlaces */
+    text-align: center;
+    padding: 14px 16px; /* Espacio interior alrededor del texto */
+    text-decoration: none; /* Quitar subrayado */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave al pasar el mouse */
+}
+
+/* Estilos para los enlaces al pasar el mouse por encima */
+.navbar a:hover {
+    background-color: #217dbb; /* Cambia el color de fondo al pasar el mouse */
+    color: #fff; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Estilos para la barra de navegación en dispositivos móviles */
+@media screen and (max-width: 600px) {
+    .navbar a {
+        float: none; /* Hace que los enlaces se muestren uno debajo del otro */
+        display: block;
+        text-align: left; /* Alinea el texto a la izquierda */
+    }
+}
+
+
+/* Ensure cards are visible */
+.card {
+    margin-bottom: 20px;
+}
+
+/* Add padding to the top of the content section */
+.content-section {
+    padding-top: 80px; /* Adjust as needed */
+}
+
+/* Adjust navbar z-index to ensure it's above other content */
+.navbar {
+    z-index: 1000;
+}
+/* Adjust the position of the carousel caption */
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Add background color to improve readability */
+    padding: 20px; /* Add padding for better spacing */
+    color: #fff; /* Text color */
+    opacity: 0; /* Initially hide the caption */
+    transition: opacity 0.3s ease; /* Add transition effect */
+}
+
+/* Show the caption on hover */
+.carousel-item:hover .carousel-caption {
+    opacity: 1; /* Show the caption */
+}
+
+/* Center the text within the carousel caption */
+.carousel-caption p {
+    margin: 0;
+}
+
+
+/* Center the text within the carousel caption */
+.carousel-caption h5,
+.carousel-caption p {
+    margin: 0;
+}
+
+.carousel-item img {
+    width: 1200px; /* Ancho deseado */
+    height: 700px; /* Alto deseado */
+}
+/* Estilos específicos para la vista de Monte Tarn */
+
+/* Estilos para el título */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la descripción */
+p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Estilos para el contenedor de los detalles */
+.details-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estilos para cada detalle */
+.detail {
+    width: calc(33.33% - 20px); /* Ancho del detalle */
+    margin: 10px; /* Espacio entre detalles */
+}
+
+/* Estilos para la imagen */
+.detail img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el precio */
+.detail .price {
+    font-weight: bold;
+}
+
+/* Estilos para el título del detalle */
+.detail h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body h6 {
+    margin-bottom: 5px; /* Ajusta el espacio entre el título y el texto */
+}
+
+.card-body p {
+    margin-bottom: 10px; /* Ajusta el espacio entre los párrafos */
+}
